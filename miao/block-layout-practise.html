@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .title{
+      background-color: #000;
+      color: white;
+      padding-left:calc(50% - 300px);
+    }
+    .main-box{
+      width: 600px;
+      margin: 16px auto 0;
+    }
+    ul,li{
+      margin: 0;
+      padding: 0;
+    }
+    .box li{
+      list-style: none;
+      box-sizing: border-box;
+      height: 40px;
+      width: 180px;
+      border:3px solid black;
+      line-height: 34px;
+      background-color:pink;
+      margin-bottom:15px;
+    }
+    .one{
+      margin-top: 15px;
+    }
+    .two{
+      margin-top: -220px;
+      margin-left:210px;
+    }
+    .box li:nth-child(n+6){
+      margin-left:210px;
+    }
+    .box li.three{
+      margin-top:-220px;
+      margin-left:420px;
+    }
+    .box li:nth-child(n+10){
+      margin-left: 420px;
+    }
+    .box li:hover{
+      background-color: red;
+    }
+    .link{
+      list-style: none;
+      overflow: hidden;
+    }
+    .link li{
+      border-bottom: 1px dotted black;
+    }
+    .link li:last-child{
+      margin-bottom: -1px;
+    }
+    .end{
+      margin-top: 14px;
+      background-color:rgb(238,130,238);
+      text-align: center;
+      height: 42px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="title">hello world 请调整浏览器窗口大小查看效果</div>
+  <div class="main-box">
+  <div class="warning">
+  页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+  </div>
+  <ul class="box">
+    <li class="one">宽180高40(包含边框)</li>
+    <li>水平间隙30px</li>
+    <li>垂直间隙15px</li>
+    <li>边框宽度3px</li>
+    <li class="two">产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li class="three">产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+  </ul>
+  <ul class="link">
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+  </ul>
+</div>
+  <div class="end">
+    ©版权所有
+    <br>
+    本页所有布局均使用块元素
+  </div>
+</body>
+</html>
