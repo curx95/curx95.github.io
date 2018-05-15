@@ -13,39 +13,23 @@
       width: 600px;
       margin: 16px auto 0;
     }
-    ul,li{
-      margin: 0;
-      padding: 0;
+    span{
+      border:3px solid black ;
     }
-    .box li{
-      list-style: none;
-      box-sizing: border-box;
-      height: 40px;
-      width: 180px;
-      border:3px solid black;
-      line-height: 34px;
-      background-color:pink;
-      margin-bottom:15px;
+    span{
+      margin-left: 30px;
+      padding-right: 142px;
+      padding-top: 6.5px;
+      padding-bottom: 6.5px;
+      line-height: 68px;
+      margin-bottom: -10px;
+      background-color: pink;
     }
-    .one{
-      margin-top: 15px;
-    }
-    .two{
-      margin-top: -220px;
-      margin-left:210px;
-    }
-    .box li:nth-child(n+6){
-      margin-left:210px;
-    }
-    .box li.three{
-      margin-top:-220px;
-      margin-left:420px;
-    }
-    .box li:nth-child(n+10){
-      margin-left: 420px;
-    }
-    .box li:hover{
+    span:hover{
       background-color: red;
+    }
+    span:nth-of-type(3n+1){
+      margin-left: 0;
     }
     .link{
       list-style: none;
@@ -73,20 +57,10 @@
   <div class="warning">
   页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
   </div>
-  <ul class="box">
-    <li class="one">宽180高40(包含边框)</li>
-    <li>水平间隙30px</li>
-    <li>垂直间隙15px</li>
-    <li>边框宽度3px</li>
-    <li class="two">产品</li>
-    <li>产品</li>
-    <li>产品</li>
-    <li>产品</li>
-    <li class="three">产品</li>
-    <li>产品</li>
-    <li>产品</li>
-    <li>产品</li>
-  </ul>
+  <span>产品</span><span>产品</span><span>产品</span>
+  <span>产品</span><span>产品</span><span>产品</span>
+  <span>产品</span><span>产品</span><span>产品</span>
+  <span>产品</span><span>产品</span><span>产品</span>
   <ul class="link">
     <li>link</li>
     <li>link</li>
