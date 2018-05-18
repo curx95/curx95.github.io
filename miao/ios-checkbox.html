@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    input{
+      display: none;
+    }
+    .button{
+      display: block;
+      width: 224px;
+      height: 112px;
+      border-radius: 100px;
+      background-color: #ececec;
+      border: 1px solid #ececec;
+      transition: all 0.2s;
+    }
+    div:before{
+      display: block;
+      content: '';
+      width: 96px;
+      height: 96px;
+      border-radius:100px;
+      background-color: #fff;
+      margin: 8px 0px 0px 8px;
+    }
+    input:checked + .button{
+      padding-left: 112px;
+      background-color: #4CD966;
+      width: 112px;
+    }
+  </style>
+</head>
+<body>
+  <label >
+  <input type="checkbox" >
+  <div class="button"></div>
+  </label>
+</body>
+</html>
