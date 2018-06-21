@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+    var a = +prompt('请输入二元一次方程的a:')
+    var b = +prompt('请输入二元一次方程的b:')
+    var c = +prompt('请输入二元一次方程的c:')
+    var delta = b * b - 4 * a * c
+    if(delta<0){
+      delta=-delta
+      var s_delta = Math.sqrt(delta)
+      var x1=-b/(2*a)
+      var x2=-s_delta/(2*a)
+      var x3=s_delta/(2*a)
+      console.log('x1='+x1+x2+'i'+','+'x2='+x1+'+'+x3 +'i')
+    }else if(delta==0){
+      var s_delta = Math.sqrt(delta)
+      var x1=(-b+s_delta)/(2*a)
+      console.log('x='+x1)
+    }else{
+      var s_delta = Math.sqrt(delta)
+      var x1=(-b+s_delta)/(2*a)
+      var x2=(-b-s_delta)/(2*a)
+      console.log('x1='+x1+','+'x2='+x2)
+    }
+    alert('马上进入下一个方程')
+    var a1 = +prompt('请输入一元二次方程的a:')
+    var b1 = +prompt('请输入一元二次方程的b:')
+    var c1 = +prompt('请输入一元二次方程的c:')
+    var a2 = +prompt('请输入一元二次方程的d:')
+    var b2 = +prompt('请输入一元二次方程的e:')
+    var c2 = +prompt('请输入一元二次方程的f:')
+    if(a1/a2!=b1/b2){
+        var s1=b1*a2-b2*a1
+        var y=(c1*a2-c2*a1)/s1
+        var x=(c1-b1*y)/a1
+        console.log(x,y)
+    }else if(a1/a2==c1/c2){
+      console.log('有无穷个解')
+    }else{
+      console.log('方程组无解')
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
