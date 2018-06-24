@@ -116,9 +116,7 @@
       console.log('YES')
     }
   </script>
-  <script id="ch0104/12">
-    
-  </script>
+
 
 
 
@@ -248,7 +246,7 @@
     }
     console.log(t)
   </script>
-  <script id="ch0105/09">
+  <script id="ch0105/06">
     // 06:整数序列的元素最大跨度值
     // 给定一个长度为n的非负整数序列，请计算序列的最大跨度值（最大跨度值 = 最大值减去最小值）。
     var num = +prompt('请输入有多少个数字')
@@ -267,8 +265,8 @@
     console.log(max-min)
   </script>
   <script id="ch0105/07">
-    07:奥运奖牌计数
-    2008年北京奥运会，A国的运动员参与了n天的决赛项目(1≤n≤17)。现在要统计一下A国所获得的金、银、铜牌数目及总奖牌数。
+    // 07:奥运奖牌计数
+    // 2008年北京奥运会，A国的运动员参与了n天的决赛项目(1≤n≤17)。现在要统计一下A国所获得的金、银、铜牌数目及总奖牌数。
     var num = +prompt('请输入比赛进行了几天')
     var Au  = 0
     var Ag  = 0
@@ -456,23 +454,15 @@
     }
   </script>
   <script id='ch0105/19'>
-    var n = +prompt('请输入实验总数')
-    var a = +prompt('总病例数')
-    var b = +prompt('有效病例数')
-    var s = b / a
-    var t = 0
-    for(var i = 1; i < n; i++) {
-      a = +prompt('总病例数')
-      b = +prompt('有效病例数')
-      t = b / a
-      if (t - s > 0.05) {
-        console.log('better')
-      }else if(s - t > 0.05) {
-        console.log('worse')
-      }else {
-        console.log('same')
+    var n = +(prompt('屋顶数n'))
+    var sum = 0
+      for (var i = 0; i < n; i++) {
+        var a = +(prompt('坐标位置'))
+        var b = +(prompt('坐标位置'))
+        var c = +(prompt('人数'))
+        sum += (a / 50 + b / 50 * 2) + (c + c / 2)
       }
-    }
+    console.log(Math.ceil(sum))
   </script>
   <script id='ch0105/20'>
     var h = +prompt('请输入球的初始高度')
@@ -482,8 +472,9 @@
       sum = h1 +sum
       h1 = 1 / 2 * h1
     }
-    console.log(sum)
-    console.log(1 / 2 * h1)
+    h1 = 1 / 2 * h1
+    console.log(sum.toFixed(4))
+    console.log(h1.toFixed(7))
   </script>
 </head>
 <body>
