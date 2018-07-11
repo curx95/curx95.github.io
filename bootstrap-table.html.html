@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .input-group{
+      display: table;
+      margin: 0 auto;
+      width: 600px;
+    }
+    .int,#usna,.int2,#usna2{
+      display: table-cell;
+    }
+    .int{
+      width:34px;
+      height: 34px;
+      line-height: 34px;
+      border: 1px solid #ced4da;
+      text-align: center;
+      background-color: #e9ecef;
+      border-radius: 5px 0px 0px 5px;
+    }
+    #usna{
+      height: 36px;
+      width:100%;
+      border: 1px  solid #ced4da;
+      border-left: 0;
+      line-height: 34px;
+      border-radius: 0px 5px 5px 0px;
+    }
+    .int2{
+      width:150px;
+      height: 34px;
+      line-height: 34px;
+      border: 1px solid #ced4da;
+      text-align: center;
+      background-color: #e9ecef;
+      border-radius: 0px 5px 5px 0px;
+    }
+     #usna2{
+      height: 36px;
+      width:100%;
+      border: 1px  solid #ced4da;
+      line-height: 34px;
+      border-radius: 5px 0px 0px 5px;
+    }
+  /*基础表格*/
+    .table-responsive,.table{
+      margin: 0 auto;
+      width: 781px;
+      border-collapse: collapse;
+    }
+    .table td,.table th{
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .table thead th{
+      border-top: 1px solid #dee2e6;
+      border-bottom: 2px solid #dee2e6;
+    }
+    /*hover表格*/
+    .table-hover  tr:hover{
+      background-color: rgb(242,242,242);
+    }
+    .table-hover{
+      overflow: hidden;
+    }
+    .table-hover td,.table-hover th{
+      position: relative;
+    }
+    .table-hover td:hover::after,
+    .table-hover th:hover::after {
+      content: "";
+      position: absolute;
+      background-color: rgb(242,242,242);
+      left: 0;
+      top: -5000px;
+      height: 10000px;
+      width: 100%;
+      z-index: -1;
+    }
+    /*有框表格*/
+    .table-bordered td,.table-bordered th{
+      border: 1px solid #dee2e6;
+    }
+    /*间隔表格*/
+    .table-striped tbody tr:nth-child(2n+1){
+      background-color: rgb(242,242,242);
+    }
+    /*响应表格*/
+    .table-responsive{
+    display: block;
+    overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- 输入框作业 -->
+  <div class="input-group">
+    <span class="int">@</span>
+    <input type="text" placeholder="Username" id="usna">
+  </div>
+  <br>
+  <div class="input-group">
+    <input type="text2" placeholder="Recipient's username" id="usna2">
+    <span class="int2">@example.com</span>
+  </div>
+  <br>
+  <br>
+  <!-- 正常表格 -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <!-- hover表格 -->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <!-- 有框表格 -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
+  <!-- 间隔行 -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <!-- 响应列表 -->
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

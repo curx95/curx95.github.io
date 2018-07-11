@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  /*单一元素实现效果*/
+    div.fontc{
+      width: 200px;
+      height: 100px;
+      background-color: #a0d0e0;
+      border-bottom: 2px solid red;
+      display: table-cell;
+      vertical-align: bottom;
+      transition: font-size 5s;
+      padding-left: 5px;
+      cursor:pointer;
+    }
+    div.fontc:hover{
+      font-size: 48px;
+    }
+    /*inset实现hover变色*/
+    .table-9{
+      border-collapse: collapse;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+    }
+    .table-9 td{
+      border: 2px inset blue;
+    }
+
+    .table-9 td:hover{
+      border:2px solid red;
+    }
+    .table-9{
+      border-collapse: collapse;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 单元素实现放大 -->
+  <div class="fontc">
+    订阅博客
+  </div>
+  <br>
+  <br>
+  <!-- 边框变色 -->
+  <table class="table-9">
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

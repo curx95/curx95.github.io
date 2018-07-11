@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  /*<script id="sort" sample-input="4 1 7" sample-output="1 4 7" comment="  输入三个数，把此三个数按升序输出">
+    var a = +prompt('输入第一个数')
+    var b = +prompt('输入第二个数')
+    var c = +prompt('输入第三个数')
+    var t = 0
+    if(a>b){
+      t = a
+      a = b
+      b = t
+    }
+    if(a>c){
+      t = a
+      a = c
+      c = t
+    }
+    if(b>c){
+      t = b
+      b = c
+      c = t
+    }
+    console.log(a+' '+b+' '+c)
+  </script>
+  <script id="narcissistic " sample-input="153" sample-output="YES"   comment="判断一个数是否为水仙花数">
+    var x = prompt("请输入数字");
+    var a = x.length;
+    var b = x.split("");
+    var c = 0;
+    for (var i = 0; i < b.length; i++) {
+      c += Math.pow(b[i],a);
+    }
+    console.log(c == x ? 'YES' : 'NO')
+  </script>
+  <script id="narcissistics" sample-input="" sample-output="" comment=" 找出100到10000以内所有的水仙花数">
+    for(var x = 100; x <=10000; x++){
+    x = x.toString()
+    var a = x.length;
+    var b = x.split("");
+    var c = 0;
+    for (var i = 0; i < b.length; i++) {
+       c += Math.pow(b[i],a);
+    }
+    if (c == x){
+      console.log(c)
+    }
+    }
+  </script>
+  <script id="palindrom" sample-input="12321" sample-output="YES" comment=  "判断一个非负整数是否为回文数字">
+    var x = prompt("请输入数字");
+    var a = x.split('').reverse().join('')
+    if (x == a){
+      console.log('YES')
+    }else{
+      console.log('NO')
+    }
+  </script>
+  <script id="weekday" sample-input="2018 6" sample-output="5" comment="  输入年份与月份，给出该年该月的第一天是星期几">
+    var a = +prompt("请输入年份");
+    var b = +prompt("请输入月份");
+    var time = new Date(a,b-1,1)
+    var weekday = time.getDay()
+    console.log(weekday === 0?7:weekday)
+  </script>
+  <script id="complete-number" sample-input="6" sample-output="YES"   comment="判断一个数是否为完全数">
+    var a = +prompt('输入一个数')
+    var sum = 0
+    for (var i = 1; i < a; i++){
+      if (a % i == 0){
+        sum += i
+      }
+    }
+    console.log(sum == a?'YES':'NO')
+  </script>
+  <script id="complete-numbers" sample-input="" sample-output="" comment="  输出10000以内所有的完全数">
+    for(var j = 1; j <=10000 ;j++){
+      var sum = 0
+      for (var i = 1; i < j; i++){
+        if (j % i == 0){
+          sum += i
+        }
+    }
+      if (sum == j){
+      console.log(j)
+      }
+    }
+  </script>
+  <script id="prime" sample-input="7" sample-output="YES" comment=" 判断一个数是否为素数">
+  </script>
+  <script id="primes" sample-input="" sample-output="" comment="  输出100以内所有的素数">
+  </script>
+  <script id="itob" sample-input="123" sample-output="123" comment="  数字转换成字符串">
+    var a = +prompt('数字')
+    var b=[]
+    b[1]= a
+    b=b.join('$')
+    console.log(b)
+    console.log(typeof(b))
+  </script>
+  <script id="lcf&lcm" sample-input="12 9" sample-output="36 3" comment=" 给定两个数，求它们的最小公倍数和最大公约数">
+    var a = +prompt('第一个')
+    var b = +prompt('第二个')
+    var t = 0
+    for (var i = 1; i <= a*b; i++){
+      if (a % i ===0 && b % i ===0){
+        t = i
+      }
+      if (i % a ===0 && i % b ===0){
+        console.log(i)
+        break
+      }
+    }
+    console.log(t)
+  </script>
+  <script id="7" sample-input="" sample-output="" comment="敲7">
+  </script>
+  <script id="sqrt" sample-input="2" sample-output="1.414" comment="  不使用Math.sqrt，求一个非负数的平方根，至少精确到小数点后3位">
+    var s = 2
+    var max = 0
+    for(var i = ; i < 2 ;i+=0.001){
+      s = i*i
+      if(2 - s >=0){
+        max = i
+      }
+    }
+    console.log(max.
+    foo()
+    class fuss
+  </script>
+
+</head>
+<body>
+  
+</body>
+</html>
