@@ -1,3 +1,5 @@
 var curx95 = {
-  chunk:
+    chunk: function(){
+      
+    }
 }
