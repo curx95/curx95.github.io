@@ -6,7 +6,7 @@ curx95 = {
    * @param {Number} size The length of each chunk
    * @returns {Array} result Returns the new array of chunks.
    */
-  chunk(arry, size = 1) {
+  chunk:(arry, size = 1) {
     var result = []
     for (var i = 0; i < arry.length; i += size) {
       result.push(arry.slice(i, i + size))
@@ -18,7 +18,7 @@ curx95 = {
    * @param {Array} array The array to compact.
    * @returns {Array} array Returns the new array of filtered values.
    */
-  compact(array) {
+  compact:(array) {
     return array.filter(e => e)
   }
   /**
@@ -27,9 +27,9 @@ curx95 = {
    * @param value The values to exclude.
    * @returns {Array} Returns the new array of filtered values.
    */
-  difference(arry, ...value) => arry.filter(x => ![].concat(...value).includes(x))
+  difference:(arry, ...value) => arry.filter(x => ![].concat(...value).includes(x))
   //去除目标数组中非数组的元素，并对比其余元素，留下非重复值
   // differenceBy:(arry,...value)=>arry.filter(x=>![].concat(...value.filter(e=>typeof(e)===Object)).includes(x))
-  drop:
+
   
 };
