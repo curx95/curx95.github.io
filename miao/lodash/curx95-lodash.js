@@ -27,8 +27,29 @@ var curx95 = {
    * @returns {Array} Returns the new array of filtered values.
    */
   difference:(arry, ...value) => arry.filter(x => ![].concat(...value).includes(x)),
-  //去除目标数组中非数组的元素，并对比其余元素，留下非重复值
-  // differenceBy:(arry,...value)=>arry.filter(x=>![].concat(...value.filter(e=>typeof(e)===Object)).includes(x))
+  //去除目标数组中非数组的元素，并对比其余元素，留下非重复值  differenceBy:(arry,...value)=>arry.filter(x=
+  //>![].concat(...value.filter(e=>typeof(e)===Object)).includes(x))
 
+  drop:(array,n = 1) => array.slice(n),
+
+  dropRight:(array,n = 1)=>(array.length - n)>0?array.slice(0,array.length-n):[],
+  identity:(value)=>value,
+  fill:(array,value,start = 0,end = array.length)=>{
+    if(start < 0){
+    start = -start>array.length?0:start+array.length
+    }
+    end = (end === undefined||end>array.length)?array.length:end
+    if(end<0){
+      end+=array.length
+    }
+    if(start > end){
+      end = 0
+    }
+    while(start<end){
+      array[start++] = value
+    }
+    return array
+  }
+  flatten:(array)=>[].concat(...array)
   
 };
