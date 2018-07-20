@@ -49,7 +49,6 @@ var curx95 = {
       array[start++] = value
     }
     return array
-  }
+  },
   flatten:(array)=>[].concat(...array)
-  
 };
