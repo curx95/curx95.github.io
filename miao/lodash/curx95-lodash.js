@@ -33,7 +33,9 @@ var curx95 = {
   drop:(array,n = 1) => array.slice(n),
 
   dropRight:(array,n = 1)=>(array.length - n)>0?array.slice(0,array.length-n):[],
+
   identity:(value)=>value,
+
   fill:(array,value,start = 0,end = array.length)=>{
     if(start < 0){
     start = -start>array.length?0:start+array.length
@@ -50,5 +52,24 @@ var curx95 = {
     }
     return array
   },
-  flatten:(array)=>[].concat(...array)
+  flatten:(array)=>[].concat(...array),
+
+  unary:(f)=>value=>f(value),
+
+  negate:(f)=>...args=>!f(args),
+
+  range:(start,end,step = 1) => {
+    len?
+    var result = []
+    end = end?end:start
+    if(start>end&&step>=0){
+      return []
+    }else(start<end&&step<=0){
+      return []
+    }
+    if(arguments.length === 2){
+      step = start>end?-1:1
+    }
+    while()
+
 };
