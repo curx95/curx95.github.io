@@ -54,22 +54,6 @@ var curx95 = {
   },
   flatten:(array)=>[].concat(...array),
 
-  unary:(f)=>value=>f(value),
-
-  negate:(f)=>...args=>!f(args),
-
-  range:(start,end,step = 1) => {
-    len?
-    var result = []
-    end = end?end:start
-    if(start>end&&step>=0){
-      return []
-    }else(start<end&&step<=0){
-      return []
-    }
-    if(arguments.length === 2){
-      step = start>end?-1:1
-    }
-    while()
+  unary:(f)=>value=>f(value)
 
 };
